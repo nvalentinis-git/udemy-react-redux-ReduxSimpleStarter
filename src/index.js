@@ -9,6 +9,7 @@ import VideoDetail from './components/video_detail'
 
 const API_KEY = "AIzaSyCWEPb_oDuHEAwDrvP671J-rlx67F7CZZo";
 
+// Class base Component
 class App extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ class App extends Component {
   }
 
   render() {
-    // wrapp the original functiona and call it once 300 milisecond 
+    // wrapp the original functiona and call it once 300 milisecond
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
 
     return (
