@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Functional Component
 const VideoDetail = ({video}) => {
 
   if (!video) {
@@ -10,8 +11,6 @@ const VideoDetail = ({video}) => {
   const url = `https://www.youtube.com/embed/${videoId}`; //ES6 String Template
 
   return (
-
-
       <div className="video-detail col-md-8">
         <div className="embed-responsive embed-responsive-16by9">
           <iframe className="embed-responsive-item" src={url}> </iframe>
